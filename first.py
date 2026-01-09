@@ -26,3 +26,7 @@ plt.title("Student Marks")
 plt.xlabel("Names")
 plt.ylabel("Marks")
 plt.show()
+
+#how to add one new column in datframe
+df["Grade"]=df["Marks"].apply(lambda x: 'A' if x>=85 else 'B' if x>=70 else 'C') # what lamda is - anonymous function - what i use instaed of a lamda? def function
+print(df)   
